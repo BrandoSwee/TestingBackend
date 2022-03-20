@@ -10,3 +10,5 @@ RUN apt-get update && apt-get install -y wget
 RUN wget https://lilypond.org/download/binaries/linux-64/lilypond-2.19.84-1.linux-64.sh
 
 RUN sh lilypond-2.19.84-1.linux-64.sh
+
+CMD ["env/Scripts/python.exe", "app.py"]
